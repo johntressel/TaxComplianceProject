@@ -97,6 +97,7 @@ namespace TaxComplianceEngine
             {
                 return tax + ((taxableIncome - 103350)*.24);
             }
+            // Bracket 5
             if (taxableIncome > 250525)
             {
                 tax += (250525-197300)*0.32;
@@ -105,6 +106,7 @@ namespace TaxComplianceEngine
             {
                 return tax + ((taxableIncome - 197300)*0.32);
             }
+            // Bracket 6 and up
             if (taxableIncome > 626350)
             {
                 tax += (626350-250525)*0.35;
